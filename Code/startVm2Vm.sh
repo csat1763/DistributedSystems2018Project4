@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-	#fallocate -l 200M 1.dat;
-	#fallocate -l 300M 2.dat;
-	#fallocate -l 400M 3.dat;
-	#fallocate -l 500M 4.dat;
-	#fallocate -l 1G 5.dat;
-	#fallocate -l 2G 6.dat;
+#fallocate -l 200M 1.dat;
+#fallocate -l 300M 2.dat;
+#fallocate -l 400M 3.dat;
+#fallocate -l 500M 4.dat;
+#fallocate -l 1G 5.dat;
+#fallocate -l 2G 6.dat;
 
 main()
 {
@@ -18,11 +18,11 @@ main()
 	storepath=$6
 	zone=$5
 	scriptName="stopTime.sh"
-	
+
 
 	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
 	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
-	
+
 	script1="
 	fallocate -l 10M 0.dat;
 	fallocate -l 200M 1.dat;
@@ -31,7 +31,7 @@ main()
 	fallocate -l 500M 4.dat;
 	fallocate -l 1G 5.dat;
 	fallocate -l 2G 6.dat;
-	
+
 
 	aws configure set AWS_ACCESS_KEY_ID $awsAccesKeyID;
 	aws configure set AWS_SECRET_ACCESS_KEY $awsSecretAccessKey;
@@ -76,13 +76,13 @@ main()
 	region1=$(cat $storepath/spot-pair.json | jq -r .[0].Zone)
 	if [ $region1 = $zone ]
 	then
-	indx=0
+		indx=0
 	else
-	indx=1
+		indx=1
 	fi
 	storepath2="$storepath/@results"
 	scp -i "$keypath$keyName.pem" -o StrictHostKeyChecking=no ec2-user@$dnsName:$zone-VM1toVM2.json "$(pwd)/$storepath2/"
-	
+
 	echo -e "\"instanceType\":\"$(cat $storepath/spot-pair.json | jq -r .[0].InstanceType)\"," >> "$storepath2/$zone-VM1toVM2.json"
 	echo -e "\"zone\":\"$zone\"," >> "$storepath2/$zone-VM1toVM2.json"
 	echo -e "\"price\":\"$(cat $storepath/spot-pair.json | jq -r .[$indx].SpotPrice)\"," >> "$storepath2/$zone-VM1toVM2.json"

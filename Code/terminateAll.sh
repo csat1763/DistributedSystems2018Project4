@@ -2,37 +2,43 @@
 
 main()
 {
-mkdir -p "all-instances"
+	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
+	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
 
-if [ -e jsons/regions.json ]
-then
-	sleep .0001
-else
-	echo "[*] Loading regions ..."
-    aws ec2 describe-regions > jsons/regions.json
-fi
+	aws configure set AWS_ACCESS_KEY_ID $awsAccesKeyID
+	aws configure set AWS_SECRET_ACCESS_KEY $awsSecretAccessKey
+
+	mkdir -p "all-instances"
+
+	if [ -e jsons/regions.json ]
+	then
+		sleep .0001
+	else
+		echo "[*] Loading regions ..."
+		aws ec2 describe-regions > jsons/regions.json
+	fi
 
 
-size=$(cat jsons/regions.json | jq '.Regions | length' )
-for (( i=0; i<$size; i++ ))
-do
-	regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
-	aws --region=$regionName ec2 describe-instances > all-instances/"instances-$regionName.json" &
-	aws --region=$regionName ec2 describe-spot-instance-requests > all-instances/"request-$regionName.json" &
-done
+	size=$(cat jsons/regions.json | jq '.Regions | length' )
+	for (( i=0; i<$size; i++ ))
+	do
+		regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
+		aws --region=$regionName ec2 describe-instances > all-instances/"instances-$regionName.json" &
+		aws --region=$regionName ec2 describe-spot-instance-requests > all-instances/"request-$regionName.json" &
+	done
 
-waitJobs
+	waitJobs
 
-for (( i=0; i<$size; i++ ))
-do
-	regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
-	removeFromRegion "all-instances/instances-$regionName.json" "$regionName" &
-	cancelSpotReq "all-instances/request-$regionName.json" "$regionName" &
-done
+	for (( i=0; i<$size; i++ ))
+	do
+		regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
+		removeFromRegion "all-instances/instances-$regionName.json" "$regionName" &
+		cancelSpotReq "all-instances/request-$regionName.json" "$regionName" &
+	done
 
-waitJobs
+	waitJobs
 
-rm -rf "all-instances"
+	rm -rf "all-instances"
 }
 
 waitJobs()
@@ -75,17 +81,17 @@ cancelSpotReq()
 {
 	spotFile=$1
 	region=$2
-	
+
 	reqSize=$(cat $spotFile | jq '.SpotInstanceRequests | length')
-	
+
 	for (( i=0; i<$reqSize; i++ ))
 	do
 		reqId=$(cat $spotFile | jq -r --arg i $i .SpotInstanceRequests[$i].SpotInstanceRequestId)
 		aws --region=$region ec2 cancel-spot-instance-requests --spot-instance-request-ids $reqId &
 		echo Canelling request $reqId ...
 	done
-	
-	
+
+
 
 }
 
