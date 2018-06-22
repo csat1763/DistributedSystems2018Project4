@@ -2,12 +2,6 @@
 
 main(){
 
-	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
-	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
-	
-	aws configure set AWS_ACCESS_KEY_ID $awsAccesKeyID
-	aws configure set AWS_SECRET_ACCESS_KEY $awsSecretAccessKey
-
 	mkdir -p jsons
 	mkdir -p regions
 
@@ -416,6 +410,12 @@ elif [[ "$OSTYPE" == "msys" ]]; then
 		./jq-win64.exe "$@"
 	}
 fi
+
+awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
+awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
+
+aws configure set aws_access_key_id $awsAccesKeyID
+aws configure set aws_secret_access_key $awsSecretAccessKey
 
 waitJobs()
 {

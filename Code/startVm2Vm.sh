@@ -33,8 +33,8 @@ main()
 	fallocate -l 2G 6.dat;
 
 
-	aws configure set AWS_ACCESS_KEY_ID $awsAccesKeyID;
-	aws configure set AWS_SECRET_ACCESS_KEY $awsSecretAccessKey;
+	aws configure set aws_access_key_id $awsAccesKeyID;
+	aws configure set aws_secret_access_key $awsSecretAccessKey;
 	chmod 400 $keyName.pem;
 	chmod +x $scriptName;
 	./$scriptName $vm2name $keyName $zone;
