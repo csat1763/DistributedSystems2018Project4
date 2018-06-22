@@ -1,0 +1,11 @@
+{
+  "ImageId": "ami-ca0135b3",
+  "KeyName": "temp",
+  "SecurityGroupIds": [
+    "sg-091a975d065f12234"
+  ],
+  "InstanceType": "t1.micro",
+  "Placement": {
+    "AvailabilityZone": "eu-west-1c"
+  }
+}

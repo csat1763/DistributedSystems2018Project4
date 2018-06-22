@@ -1,0 +1,43 @@
+{
+    "types": [
+        {
+            "type": "t2.micro"
+		},
+		{
+            "type": "t2.small"
+		},
+		{
+            "type": "t2.medium"
+		},
+		{
+            "type": "t2.large"
+		},
+		{
+            "type": "t2.xlarge"
+		},
+        {
+            "type": "m5.large"
+		},
+		{
+            "type": "m5.xlarge"
+		},
+		{
+            "type": "m5.2xlarge"
+		},
+		{
+            "type": "m5.4xlarge"
+		},
+        {
+            "type": "c5.large"
+		},
+		{
+            "type": "c5.xlarge"
+		},
+		{
+            "type": "c5.2xlarge"
+		},
+		{
+            "type": "c5.4xlarge"
+		}
+    ]
+}

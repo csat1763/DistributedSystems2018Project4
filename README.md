@@ -3,7 +3,7 @@
 
 ### Team
 
-- Aspir Ahmed
+- Aspir Ahmet
 - Nardi Mark
 - Pfeifhofer Martin
 
@@ -17,7 +17,11 @@
 
 The code can be found in the *Code* folder. To execute the code do the following...
 
-     $ ./
+     $ ./main.sh
+	 
+To stop all spot-requests and terminate all running instances run...
+	 
+	 $ ./terminateAll.sh
 
 ## Results
 
