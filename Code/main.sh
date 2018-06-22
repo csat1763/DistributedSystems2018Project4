@@ -2,6 +2,12 @@
 
 main(){
 
+	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
+	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
+	
+	aws configure set AWS_ACCESS_KEY_ID $awsAccesKeyID
+	aws configure set AWS_SECRET_ACCESS_KEY $awsSecretAccessKey
+
 	mkdir -p jsons
 	mkdir -p regions
 

@@ -14,8 +14,12 @@
 3. Determine the cost-performance trade-off
 
 ## Code
+The code can be found in the *Code* folder.
+Before running the code enter your credentials in file...
 
-The code can be found in the *Code* folder. To execute the code do the following...
+	$ credentials.json
+
+To execute the code do the following...
 
      $ ./main.sh
 	 

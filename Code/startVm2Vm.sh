@@ -20,9 +20,9 @@ main()
 	scriptName="stopTime.sh"
 	
 
-	awsAccesKeyID=XXXXXXXXXX
-	awsSecretAccessKey=XXXXXXXXXXXXX
-
+	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
+	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
+	
 	script1="
 	fallocate -l 10M 0.dat;
 	fallocate -l 200M 1.dat;
