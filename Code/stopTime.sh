@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 spinner(){
 	PID=$1
 	i=1
