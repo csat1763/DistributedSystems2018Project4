@@ -34,7 +34,7 @@ To stop all spot-requests and terminate all running instances run...
 
 The output from running ./start.sh will be the file below which is then further evaluated.
 
-	$ *cost-performance.csv*
+	cost-performance.csv
 
 ## Results
 
