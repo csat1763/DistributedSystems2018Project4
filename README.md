@@ -39,3 +39,4 @@ The output from running ./start.sh will be the file below which is then further 
 ## Results
 
 The results can be found in the *Results* folder. The results are stored in a *.csv* file. The measurements are evaluated in an Excel Sheet.
+Also a HTML version of the results is available at: http://htmlpreview.github.io/?https://github.com/csat1763/DistributedSystems2018Project4/blob/master/Results/Evaluation%20Measurements.htm
