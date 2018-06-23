@@ -19,9 +19,13 @@ Before running the code enter your credentials in file...
 
 	$ credentials.json
 
+Then run following command in your shell...
+
+	$ chmod +x start.sh
+
 To execute the code do the following...
 
-     $ ./main.sh
+     $ ./start.sh
 	 
 To stop all spot-requests and terminate all running instances run...
 	 
