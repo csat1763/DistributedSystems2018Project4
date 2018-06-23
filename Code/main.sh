@@ -531,7 +531,7 @@ setup()
 	waitJobs
 }
 
-echo "$(date)" > timeStart
+echo "start: $(date)" > totalTime
 setup
 phase1
 phase2
@@ -539,5 +539,5 @@ phase3
 phase4
 phase5
 java -jar cost-performance.jar "$(pwd)"
-echo "$(date)" > timeEnd
+echo "end: $(date)" >> totalTime
 
