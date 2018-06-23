@@ -32,6 +32,10 @@ To stop all spot-requests and terminate all running instances run...
 	 
 	 $ ./terminateAll.sh
 
+The output from running ./start.sh will be the file below which is then further evaluated.
+
+	$ *cost-performance.csv*
+
 ## Results
 
 The results can be found in the *Results* folder. The results are stored in a *.csv* file. The measurements are evaluated in an Excel Sheet.
