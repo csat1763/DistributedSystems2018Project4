@@ -181,11 +181,9 @@ gather_prices()
 #different way to wait for sub-processes can also achieved by calling waitJobs
 wait_for_gathering()
 {
-	#preparebar 50 "#"
 	lineSize=$(wc -l < temp.txt)
 	x=0
 	while IFS='' read -r line || [[ -n "$line" ]]; do
-		#progressbar $x $lineSize
 		lineSize=$(wc -l < temp.txt)
 		while [ -e /proc/$line ]
 		do
@@ -193,27 +191,6 @@ wait_for_gathering()
 		done
 		let x=$x+1
 	done < temp.txt
-}
-
-# Thx stackoverflow nice loading bar
-progressbar() {
-	# $1 - number (-1 for clearing the bar)
-	# $2 - max number
-	if [ $1 -eq -1 ]; then
-		printf "\r  $barspaces\r"
-	else
-		barch=$(($1*barlen/$2))
-		barsp=$((barlen-barch))
-		printf "\r[%.${barch}s%.${barsp}s]\r" "$barchars" "$barspaces"
-	fi
-}
-# Thx stackoverflow nice loading bar
-preparebar() {
-	# $1 - bar length
-	# $2 - bar char
-	barlen=$1
-	barspaces=$(printf "%*s" "$1")
-	barchars=$(printf "%*s" "$1" | tr ' ' "$2")
 }
 
 #Java program that crawls through the generated folders and finds the 2 cheapest regions for an instance-type
