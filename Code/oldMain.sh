@@ -159,33 +159,30 @@ load_prices(){
 	do
 		for (( j=0; j<$regionSize; j++ ))
 		do
-			tempIname=$(cat jsons/instance-types.json | jq -r .types[$i].type)
-			gather_prices $tempIname $j &
+			gather_prices $i $j &
 		done
-		echo "[*] Waiting for $tempIname to finish..."
-		waitJobs
-		wait_for_gathering
 	done
-	
+	wait_for_gathering
 
 }
 #subroutine for load_prices
 gather_prices()
 {
+	i=$1
 	j=$2
 	tempReg=$(cat jsons/regions.json | jq -r .Regions[$j].RegionName)
-	tempIname=$1
+	tempIname=$(cat jsons/instance-types.json | jq -r .types[$i].type)
 	aws --region=$tempReg ec2 describe-spot-price-history --instance-types $tempIname > "spots/$tempIname/$tempReg/$tempIname-prices-$tempReg.json" &
 	printf '%s\n' $! >> temp.txt
 }
 #different way to wait for sub-processes can also achieved by calling waitJobs
 wait_for_gathering()
 {
-	#preparebar 50 "#"
+	preparebar 50 "#"
 	lineSize=$(wc -l < temp.txt)
 	x=0
 	while IFS='' read -r line || [[ -n "$line" ]]; do
-		#progressbar $x $lineSize
+		progressbar $x $lineSize
 		lineSize=$(wc -l < temp.txt)
 		while [ -e /proc/$line ]
 		do
@@ -531,7 +528,6 @@ setup()
 	waitJobs
 }
 
-echo "$(date)" > timeStart
 setup
 phase1
 phase2
@@ -539,5 +535,5 @@ phase3
 phase4
 phase5
 java -jar cost-performance.jar "$(pwd)"
-echo "$(date)" > timeEnd
+
 

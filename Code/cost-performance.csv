@@ -1,26 +1,26 @@
 Cost-Performance Table
 1st Zone (Cheapest)
 Instance-Type,Speed [MB/s], Cost [$/h], Zone
-t2.micro, 24.0477, 0.0035, us-east-1
-t2.small, 36.703475, 0.0069, us-east-1
-t2.medium, 71.002931, 0.0139, us-east-1
-t2.large, 93.105729, 0.0278, us-east-1
-t2.xlarge, 112.7288, 0.0557, us-east-1
-m5.large, 133.36751, 0.0163, us-east-2
-m5.xlarge, 178.243995, 0.0326, us-east-2
-m5.2xlarge, 206.250831, 0.0711, us-east-2
-c5.large, 136.495497, 0.0168, us-east-2
-c5.xlarge, 176.791278, 0.0361, us-east-2
+t2.micro, 56.602099, 0.0035, us-east-1
+t2.small, 54.008441, 0.0069, us-east-1
+t2.medium, 68.213063, 0.0139, us-east-1
+t2.large, 91.612288, 0.0278, us-east-1
+t2.xlarge, 114.869412, 0.0557, us-east-1
+m5.large, 134.410944, 0.0163, us-east-2
+m5.xlarge, 183.545611, 0.0326, us-east-2
+m5.2xlarge, 200.493292, 0.0711, us-east-2
+c5.large, 134.436187, 0.0168, us-east-2
+c5.xlarge, 182.330077, 0.0361, us-east-2
 
 2nd Zone (2nd-Cheapest)
 Instance-Type,Speed [MB/s], Cost [$/h], Zone
-t2.micro, 22.104369, 0.0035, us-east-2
-t2.small, 36.10005, 0.0069, us-east-2
-t2.medium, 68.375956, 0.0139, us-east-2
-t2.large, 89.669032, 0.0278, us-east-2
-t2.xlarge, 119.178847, 0.0557, us-east-2
-m5.large, 136.253007, 0.0251, ca-central-1
-m5.xlarge, 182.129052, 0.0503, ca-central-1
-m5.2xlarge, 202.745813, 0.1006, ca-central-1
-c5.large, 131.586008, 0.0219, ap-south-1
-c5.xlarge, 184.984378, 0.0437, ap-south-1
+t2.micro, 21.308206, 0.0035, us-east-2
+t2.small, 36.611492, 0.0069, us-east-2
+t2.medium, 70.654855, 0.0139, us-east-2
+t2.large, 90.075234, 0.0278, us-east-2
+t2.xlarge, 117.246323, 0.0557, us-east-2
+m5.large, 140.166024, 0.0251, ca-central-1
+m5.xlarge, 183.154256, 0.0503, ca-central-1
+m5.2xlarge, 216.829932, 0.1006, ca-central-1
+c5.large, 133.243386, 0.0219, ap-south-1
+c5.xlarge, 192.409609, 0.0437, ap-south-1
