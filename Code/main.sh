@@ -229,6 +229,21 @@ gen_region_folder()
 
 }
 
+alternative_start_for_unavail_spot()
+{
+	region=$1
+	path=$2
+
+	echo "Calling normal instance instead..."
+	startNormalInstance $region "$path" 1 &
+	wait1=$!
+	startNormalInstance $region "$path" 2 &
+	wait2=$!
+	wait $wait1
+	wait $wait2
+
+}
+
 #Request a spot instance - wait for fulfillment - wait until both are running
 startSpotForRegion(){
 	region=$1
@@ -238,6 +253,12 @@ startSpotForRegion(){
 	aws --region=$region ec2 request-spot-instances --instance-count 2 --type "one-time" --launch-specification "file://$path/Specification.json" --spot-price "0.50" > "$path/spot-req.json"
 	reqId=$(cat $path/spot-req.json | jq -r .SpotInstanceRequests[0].SpotInstanceRequestId)
 	reqId2=$(cat $path/spot-req.json | jq -r .SpotInstanceRequests[1].SpotInstanceRequestId)
+	
+	if [[ $reqId = "" ]] || [[ $reqId2 = "" ]];
+	then 
+		alternative_start_for_unavail_spot $region $path
+		return
+	fi
 
 	while true; do
 		aws --region=$region ec2 describe-spot-instance-requests --spot-instance-request-ids $reqId > "$path/req-status.json" &
@@ -248,8 +269,14 @@ startSpotForRegion(){
 		if [ $reqStatus = "fulfilled" -a $reqStatus2 = "fulfilled" ]; 
 		then
 			break
+		elif [ $reqStatus != *"pending"* -a $reqStatus2 != *"pending"* ];
+		then
+			alternative_start_for_unavail_spot $region $path
+			return
+		else
+			sleep 2
 		fi
-		sleep 2
+		
 	done
 
 
@@ -417,12 +444,34 @@ awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
 aws configure set aws_access_key_id $awsAccesKeyID
 aws configure set aws_secret_access_key $awsSecretAccessKey
 
+spinner(){
+	PID=$1
+	i=1
+	sp="/-\|"
+	echo -n ' '
+	while [ -d /proc/$PID ]
+	do
+		printf "\b${sp:i++%${#sp}:1}"
+	done
+	printf "\b"
+}
+
 waitJobs()
 {
 	for job in $(jobs -p)
 	do
 		wait $job
 	done
+}
+
+cooldown()
+{
+	waitJobs
+	./terminateAll.sh
+	sleep 60 &
+	sleepx=$!
+	spinner $sleepx &
+	wait $!
 }
 
 #Can start up to 20 instances - aws doesnt offer t2 spot-instances that easily so start normal ones
@@ -434,9 +483,8 @@ phase1()
 	main "t2.medium" "no" &
 	main "t2.large" "no" &
 	main "t2.xlarge" "no" &
-	waitJobs
-	./terminateAll.sh
-	sleep 60
+	cooldown
+	
 }
 
 #Restricted to a handfull per instance-type - do measurements for first region
@@ -444,10 +492,7 @@ phase2()
 {
 	main "m5.large" "yes" "1" &
 	main "m5.xlarge" "yes" "1" &
-	main "m5.2xlarge" "yes" "1" &
-	waitJobs
-	./terminateAll.sh
-	sleep 60
+	cooldown
 
 }
 #Then for 2nd region
@@ -455,10 +500,7 @@ phase3()
 {
 	main "m5.large" "yes" "2" &
 	main "m5.xlarge" "yes" "2" &
-	main "m5.2xlarge" "yes" "2" &
-	waitJobs
-	./terminateAll.sh
-	sleep 60
+	cooldown
 
 
 }
@@ -467,9 +509,8 @@ phase4()
 {
 	main "c5.large" "yes" "1" &
 	main "c5.xlarge" "yes" "1" &
-	waitJobs
-	./terminateAll.sh
-	sleep 60
+	main "m5.2xlarge" "yes" "1" &
+	cooldown
 
 }
 #Final phase
@@ -477,9 +518,8 @@ phase5()
 {
 	main "c5.large" "yes" "2" &
 	main "c5.xlarge" "yes" "2" &
-	waitJobs
-	./terminateAll.sh
-	sleep 60
+	main "m5.2xlarge" "yes" "2" &
+	cooldown
 }
 
 setup()
@@ -494,6 +534,6 @@ phase2
 phase3
 phase4
 phase5
-waitJobs
 java -jar cost-performance.jar "$(pwd)"
+
 
