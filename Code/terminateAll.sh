@@ -20,7 +20,7 @@ main()
 	do
 		regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
 		aws --region=$regionName ec2 describe-instances > all-instances/"instances-$regionName.json" &
-		aws --region=$regionName ec2 describe-spot-instance-requests > all-instances/"request-$regionName.json" &
+		aws --region=$regionName ec2 describe-spot-instance-requests > all-instances/"request-$regionName.json"
 	done
 
 	waitJobs
