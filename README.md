@@ -19,7 +19,7 @@ Before running the code enter your credentials in file...
 
 	$ credentials.json
 	
-Open a shell in the folder "Code".
+Open a shell in the folder *Code*. 
 Then run following command in your shell...
 
 	$ chmod +x start.sh
