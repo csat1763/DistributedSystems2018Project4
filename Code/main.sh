@@ -154,7 +154,7 @@ load_prices(){
 	regionSize=$1
 	types=$2
 	rm -f temp.txt
-	echo [*] Gathering prices in every region for all instance-types...
+	echo "[*] Gathering prices in every region for all instance-types..."
 	for (( i=0; i<$types; i++ ))
 	do
 		for (( j=0; j<$regionSize; j++ ))
@@ -196,7 +196,7 @@ wait_for_gathering()
 #Java program that crawls through the generated folders and finds the 2 cheapest regions for an instance-type
 get_min_price()
 {
-	echo [*] Searching minimum price for all instance-type in each region...
+	echo "[*] Searching minimum price for all instance-type in each region..."
 	java -jar findMin.jar "$(pwd)" "jsons/instance-types.json" "jsons/regions.json"
 }
 
@@ -214,7 +214,7 @@ alternative_start_for_unavail_spot()
 	region=$1
 	path=$2
 
-	echo "Calling normal instance instead..."
+	echo "[*] Error for $path in $region Calling normal instance instead..."
 	startNormalInstance $region "$path" 1 &
 	wait1=$!
 	startNormalInstance $region "$path" 2 &
@@ -229,7 +229,8 @@ startSpotForRegion(){
 	region=$1
 	path=$2
 
-	echo "[*] Requesting Spot-Instance..."
+	type=$(cat "$path/Specification.json" | jq -r .InstanceType)
+	echo "[*] Requesting Spot-Instance for $type in $region..."
 	aws --region=$region ec2 request-spot-instances --instance-count 2 --type "one-time" --launch-specification "file://$path/Specification.json" --spot-price "0.50" > "$path/spot-req.json"
 	reqId=$(cat $path/spot-req.json | jq -r .SpotInstanceRequests[0].SpotInstanceRequestId)
 	reqId2=$(cat $path/spot-req.json | jq -r .SpotInstanceRequests[1].SpotInstanceRequestId)
@@ -245,7 +246,7 @@ startSpotForRegion(){
 		aws --region=$region ec2 describe-spot-instance-requests --spot-instance-request-ids $reqId2 > "$path/req-status2.json"
 		reqStatus=$(cat $path/req-status.json | jq -r .SpotInstanceRequests[0].Status.Code)
 		reqStatus2=$(cat $path/req-status2.json | jq -r .SpotInstanceRequests[0].Status.Code)
-		echo "[*] Request-status: $reqStatus | $reqStatus"
+		echo "[*] Request-status for $type in $region: $reqStatus | $reqStatus"
 		if [ $reqStatus = "fulfilled" -a $reqStatus2 = "fulfilled" ]; 
 		then
 			break
@@ -264,11 +265,11 @@ startSpotForRegion(){
 	echo $instanceId > $path/1.txt
 	instanceId2=$(cat "$path/req-status2.json" | jq -r .SpotInstanceRequests[0].InstanceId)
 	echo $instanceId2 > $path/2.txt
-	echo "[*] Got spot-instance in $region with id: $instanceId | $instanceId2"
+	echo "[*] Got spot-instance for $type in $region with id: $instanceId | $instanceId2"
 	while true; do
 		status=$(aws --region=$region ec2 describe-instances --instance-ids $instanceId --query Reservations[0].Instances[0].State.Name)
 		status2=$(aws --region=$region ec2 describe-instances --instance-ids $instanceId2 --query Reservations[0].Instances[0].State.Name)
-		echo "[*] Instance-status: $status | $status2" 
+		echo "[*] Instance-status for $type in $region: $status | $status2" 
 		if [ $status = "\"running\"" -a $status2 = "\"running\"" ]; 
 		then
 			break
@@ -284,6 +285,7 @@ startNormalInstance(){
 	path=$2
 	filename=$3
 
+	type=$(cat "$path/Specification.json" | jq -r .InstanceType)
 	amiID=$(cat "$path/Specification.json" | jq -r .ImageId) 
 	keyName=$(cat "$path/Specification.json" | jq -r .KeyName) 
 	secGroupID=$(cat "$path/Specification.json" | jq -r .SecurityGroupIds[0]) 
@@ -291,10 +293,10 @@ startNormalInstance(){
 
 	instanceId=$(aws --region=$region ec2 run-instances --image-id $amiID --count 1 --instance-type $itype --key-name $keyName --security-group-ids $secGroupID --query Instances[0].InstanceId)
 	instanceId=${instanceId//\"}
-	echo "[*] Got instance in $region with id: $instanceId"
+	echo "[*] Got instance for $type in $region with id: $instanceId"
 	while true; do
 		status=$(aws --region=$region ec2 describe-instances --instance-ids $instanceId --query Reservations[0].Instances[0].State.Name)
-		echo "[*] Instance-status: $status" 
+		echo "[*] Instance-status for $type in $region: $status" 
 		if [ $status = "\"running\"" ]; 
 		then
 			break
@@ -342,9 +344,9 @@ prepare_sec_group(){
 	if [ $? != 255 ]
 	then
 		cat "$path/tempSecGroup.json" > "$path/secGroup.json" 
-		echo [*] Creating new Security-Group...
+		echo "[*] Creating new Security-Group in $region..."
 	else
-		echo [*] Getting existing Security-Group...
+		echo "[*] Getting existing Security-Group in $region..."
 		aws --region=$region ec2 describe-security-groups --query 'SecurityGroups[0]' --group-names "temp-time-mes" > "$path/tempSecGroup.json"
 		cat "$path/tempSecGroup.json" > "$path/secGroup.json"
 	fi
@@ -376,9 +378,9 @@ prepare_key(){
 	key=$(aws --region=$region ec2 create-key-pair --key-name $keyName)
 	if [ $? != 255 ]
 	then
-		echo [*] Creating new Key...
+		echo "[*] Creating new Key in $region..."
 	else
-		echo [*] Removing temporary Key...
+		echo "[*] Removing temporary Key in $region..."
 		rm -f "$path/$keyName.pem"
 		aws --region=$region ec2 delete-key-pair --key-name $keyName
 		echo [*] Creating new Key...
