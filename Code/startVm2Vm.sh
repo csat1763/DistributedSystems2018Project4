@@ -17,6 +17,7 @@ main()
 	keypath2=$keypath
 	storepath=$6
 	zone=$5
+	archtiec=$7
 	scriptName="stopTime.sh"
 
 
@@ -37,7 +38,7 @@ main()
 	aws configure set aws_secret_access_key $awsSecretAccessKey;
 	chmod 400 $keyName.pem;
 	chmod +x $scriptName;
-	./$scriptName $vm2name $keyName $zone;
+	./$scriptName $vm2name $keyName $zone $archtiec;
 	echo VM-1 done;
 	"
 

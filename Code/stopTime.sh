@@ -15,6 +15,7 @@ spinner(){
 dnsName=$1
 keyName=$2
 zone=$3
+architec=$4
 while true; do
 	scp -i $keyName.pem -o StrictHostKeyChecking=no 1.dat ec2-user@$dnsName:~
 	if [ "$?" = "1" ];
@@ -32,7 +33,7 @@ do
 	for (( i=0; i<=6; i++ ))
 	do
 		startTime=$(date +%s%N)
-		echo "[*] Run $j: Transfering file $i.dat ..."
+		echo "[$architec][$zone] Run $j: Transfering file $i.dat ..."
 		scp -i $keyName.pem -o StrictHostKeyChecking=no $i.dat ec2-user@$dnsName:~/fromVM &
 		loop=$!
 		spinner $loop &

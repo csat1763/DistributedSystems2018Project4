@@ -110,7 +110,7 @@ start_2_cheapest_spots(){
 	dnsName=${dnsName//\"}
 	dnsName2=${dnsName2//\"}
 	mkdir -p "spots/$architec/@results"
-	./startVm2Vm.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec"
+	./startVm2Vm.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec" "$architec"
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId2
 }
@@ -448,6 +448,7 @@ cooldown()
 {
 	waitJobs
 	./terminateAll.sh
+	echo "[*] Waiting for all instances and requests to shutdown..."
 	sleep 60 &
 	sleepx=$!
 	spinner $sleepx &
@@ -457,7 +458,7 @@ cooldown()
 #Can start up to 20 instances - aws doesnt offer t2 spot-instances that easily so start normal ones
 #For 5 types there are 4 instaces started on each one -> 20 total so we are fine
 phase1()
-{
+{	echo "[*] Starting measurement for t2 family..."
 	main "t2.micro" "no" &
 	main "t2.small" "no" &
 	main "t2.medium" "no" &
@@ -470,6 +471,7 @@ phase1()
 #Restricted to a handfull per instance-type - do measurements for first region
 phase2()
 {
+	echo "[*] Starting measurement for m5.large and m5.xlarge in 1st zone..."
 	main "m5.large" "yes" "1" &
 	main "m5.xlarge" "yes" "1" &
 	cooldown
@@ -478,6 +480,7 @@ phase2()
 #Then for 2nd region
 phase3()
 {
+	echo "[*] Starting measurement for m5.large and m5.xlarge in 2nd zone..."
 	main "m5.large" "yes" "2" &
 	main "m5.xlarge" "yes" "2" &
 	cooldown
@@ -487,6 +490,7 @@ phase3()
 #Same problem here
 phase4()
 {
+	echo "[*] Starting measurement for c5.large, c5.xlarge and m5.2xlarge in 1st zone..."
 	main "c5.large" "yes" "1" &
 	main "c5.xlarge" "yes" "1" &
 	main "m5.2xlarge" "yes" "1" &
@@ -496,6 +500,7 @@ phase4()
 #Final phase
 phase5()
 {
+	echo "[*] Starting measurement for c5.large, c5.xlarge and m5.2xlarge in 2nd zone..."
 	main "c5.large" "yes" "2" &
 	main "c5.xlarge" "yes" "2" &
 	main "m5.2xlarge" "yes" "2" &
