@@ -3,7 +3,6 @@
 main(){
 
 	mkdir -p jsons
-	mkdir -p regions
 
 	architec=$1
 	spotYes=$2
@@ -16,7 +15,7 @@ main(){
 		sleep .0001
 	else
 		echo "[*] Loading folders and files ..."
-		createData
+		create_data
 	fi
 
 	zone1=$(cat "spots/$architec/spot-pair.json" | jq -r .[0].Zone)
@@ -49,7 +48,7 @@ main(){
 }
 
 
-createData(){
+create_data(){
 
 	#Get region list
 	if [ -e jsons/regions.json ]
@@ -91,14 +90,14 @@ start_2_cheapest_spots(){
 
 	if [ $runOnNormalInstance = 1 ]
 	then
-		startNormalInstance $zone "spots/$architec/$zone/$tempFolderName" 1 &
+		start_normal_instance $zone "spots/$architec/$zone/$tempFolderName" 1 &
 		wait1=$!
-		startNormalInstance $zone "spots/$architec/$zone/$tempFolderName" 2 &
+		start_normal_instance $zone "spots/$architec/$zone/$tempFolderName" 2 &
 		wait2=$!
 		wait $wait1
 		wait $wait2
 	else
-		startSpotForRegion $zone "spots/$architec/$zone/$tempFolderName"
+		start_spot_for_region $zone "spots/$architec/$zone/$tempFolderName"
 	fi
 
 	instanceId=$(cat spots/$architec/$zone/$tempFolderName/1.txt)
@@ -129,10 +128,6 @@ load_all_spot_instance_prices()
 #generate all necessary folders for every instance-type + its regions
 gen_all_folders(){
 	regionSize=$1
-	for (( i=0; i<$regionSize; i++ ))
-	do
-		mkdir -p regions/$(cat jsons/regions.json | jq -r .Regions[$i].RegionName)
-	done
 
 	types=$2
 	for (( i=0; i<$types; i++ ))
@@ -215,9 +210,9 @@ alternative_start_for_unavail_spot()
 	path=$2
 
 	echo "[*] Error for $path in $region Calling normal instance instead..."
-	startNormalInstance $region "$path" 1 &
+	start_normal_instance $region "$path" 1 &
 	wait1=$!
-	startNormalInstance $region "$path" 2 &
+	start_normal_instance $region "$path" 2 &
 	wait2=$!
 	wait $wait1
 	wait $wait2
@@ -225,7 +220,7 @@ alternative_start_for_unavail_spot()
 }
 
 #Request a spot instance - wait for fulfillment - wait until both are running
-startSpotForRegion(){
+start_spot_for_region(){
 	region=$1
 	path=$2
 
@@ -280,7 +275,7 @@ startSpotForRegion(){
 
 #Start a normal instance
 #3 call with a unique filename so the instance id can be extracted from it
-startNormalInstance(){
+start_normal_instance(){
 	region=$1
 	path=$2
 	filename=$3
@@ -511,7 +506,7 @@ phase5()
 
 setup()
 {
-	createData
+	create_data
 	waitJobs
 }
 
@@ -522,6 +517,6 @@ phase2
 phase3
 phase4
 phase5
-java -jar cost-performance.jar "$(pwd)"
+java -jar costPerformance.jar "$(pwd)"
 echo "end: $(date)" >> totalTime
 
