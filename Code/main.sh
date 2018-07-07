@@ -107,7 +107,7 @@ start_instance_pair(){
 	dnsName=${dnsName//\"}
 	dnsName2=${dnsName2//\"}
 	mkdir -p "spots/$architec/@results"
-	./startVm2Vm1.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec" "$architec"
+	./startVm2Vm.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec" "$architec"
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId2
 }
