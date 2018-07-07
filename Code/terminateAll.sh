@@ -3,7 +3,7 @@
 main()
 {
 
-
+	echo "[*] Terminating all running instances and spot-requests..."
 	mkdir -p "all-instances"
 
 	if [ -e jsons/regions.json ]

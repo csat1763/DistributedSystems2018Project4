@@ -1,0 +1,151 @@
+
+* "start.sh":
+This script simply makes all necessary files runnable and then runs "main.sh".
+
+* "FindMinPrice.java"
+Find the minimum price for each instance-type and all its regions and store it in each region-folder
+of the instance-types and then save the 2 cheapest spot-instances in the instance-type folder.
+See file for further documentation.
+
+* "CostPerformance.java"
+Gather all measurement-results for every region from @results folders and export it to a csv file.
+See file for further documentation.
+
+* "ValueComparator.java"
+Miscellaneous class for sorting HashMaps.
+
+* "terminateAll.sh"
+Terminates all running instances and cancels all spot-requests.
+
+--------------------------------------------------------------------------------+
+* "main.sh"
+Before starting everything needs to be setup first by calling setup.
+Since AWS restricts the amount of concurrently running instances and the amount of 
+concurrently running spot-instances the measurement runs had to be split in 5 phases.
+
+"create_data()":
+|All aws regions are loaded into the file "jsons/regions.json".
+|-+
+|"gen_all_folders() #1-amount of regions #2-amount of instance-types":
+|Generates folders for all instance types in "spots/".
+|--+
+|"gen_region_folder() #1-amount of regions #2-instance-name":
+|Generates folders for all regions for specified instance-type in "spots/#INSTANCENAME/".
+|-+
+|"load_prices() #1-amount of regions #2-amount of instance-types":
+|Request prices for every instance type in each region 
+|and save them as "spots/#INSTANCENAME/#REGION/#INSTANCENAME-prices-#REGION.json".
+|--+
+|"gather_prices() #1-instance-name #2-index for region json file":
+|A worker for load_prices that starts an aws-request to get prices with specified instance-name
+|and region (as index reference to regions.json). For each function-call every process id is written into the file "temp.txt".
+|--+
+|"wait_for_gathering()":
+|Wait for every aws-request to be fulfilled by reading from "temp.txt" and waiting for the process-id.
+|Note: WaitJobs is waiting for subprocess of the main process. Since there are subprocess created within subprocess
+|the process-ids are stored in "temp.txt" to wait for all processes to continue.
+|-+
+|"get_min_price()":
+|Run the Java-Program "findMin.jar" with params 
+|#1-current working directory 
+|#2-from working directory path to instance-types.json 
+|#3-from working directory path to regions.json.
+|For every instance-type in each region: Program picks the cheapest instance 
+|and saves the result as "spots/#INSTANCENAME/#REGION/best-#REGION.json".
+|Futhermore for every instance-type the 2 cheapest regions are picked
+|and saved in the file "spots/#INSTANCENAME/spot-pair.json".
+--------------------------------------------------------------------------------+
+
+
+--------------------------------------------------------------------------------+
+* "main.sh" continued
+After the setup the goal is to get an instance-pair running so the script "startVm2Vm.sh" can start
+transfering some files to determine speed. The script needs 2 running instances and the ids as params.
+
+"main() 
+#1-instance-name
+#2-run as spot-instance?(yes/no)
+#3-run first or second region(/1/2)(leaving blank will run both regions at same time)":
+|For every test run create a temporary folder with a random name.
+|If a given isntance-type does not exist try to reload all folders and files.
+|Read the 2 regions from previously generated json file: "spot-pair.json".
+|-+
+|"start_instance_pair() #1-instance-name #2-region #3-run as spot-instance?(yes/no) #4-tempfoldername ":
+|After preparing the specification-file for the instance and getting 2 running instances,
+|extract the DNS-Names and pass it to the script "startVm2Vm.sh" that will handle the measurement.
+|--+
+|"prepare_spec_file() #1-temporary folder name #2-region #3-path to region folder of instance":
+|For instance requests one can prepare a specification-file where all need options can be covered
+|and then used in the aws request.
+|Load empty skeleton spec-file from "jsons/template.json".
+|Load the instance-type,AvailabilityZone and the image-id into the spec-file.
+|For the measurement generate temporary key and security-group.
+|---+
+|"prepare_sec_group() #1-path to temp folder #2-region":
+|Try to create security-group with name "temp-time-mes" and write response in "tempSecGroup.json".
+|If the response is success then copy tempSecGroup.json to secGroup.json otherwise if group already exists
+|use it instead. Write security-group into specification-file.
+|---+
+|"prepare_key() #1-path to temp folder #2-region":
+|Create a tempory key with random name and extract the key from the aws response.
+|Write keyname into specification-file.
+|-+
+|"start_normal_instance() #1-region #2-path to temp folder" #3-first or second instance(1/2)(used to read instance-id from file eg. 1.txt):
+|For normal instances read every specification from spec-file and put into request.
+|Once the requested instance is up and running save instance id in #3.txt.
+|-+
+|"start_normal_instance() #1-region #2-path to temp folder":
+|Request a spot-instance-pair and write the response into a file "spot-req.json".
+|Extract request-ids from the file, if none are existend then switch to normal instances,
+|because aws was not able to provide spotinstances.
+|Check spot status for given request-id and once the request-status of both is "fulfilled" extract
+|instance-ids and write to 1.txt and 2.txt.
+|If the request-status is anything else than "pending" switch to normal instances again.
+|Wait until both spots are running.
+--------------------------------------------------------------------------------+
+
+--------------------------------------------------------------------------------+
+* "startVm2Vm.sh"
+Basically transfers a key and a short script that transfers some files to the first running instance
+and saves the measurement as a file which is then downloaded.
+
+"startVm2Vm.sh
+#1-dns-name1
+#2-dns-name2
+#3-keyname
+#4-path to key
+#5-region
+#6-instance-type
+#7-instance-type":
+Configure AWS-Credentials in order to establish successful SSH-Connection.
+Try to transfer the script "stopTime.sh" to first running instance via SCP.
+When done alsso transfer the key file.
+Connect via SSH to first instance and run prepared script which does following:
+- Allocates 7 files size range from 10MB to 2GB
+- AWS-Credentials config
+- chmod key and script
+- run script "stopTime.sh"
+- Tell when done
+Upon finishing the ssh-routine try to download the measurement file from other instance 
+called "#REGION-VM1toVM2.json" and append final necessary information to it before saving it
+in "/spots/#INSTANCENAME/@results".
+--------------------------------------------------------------------------------+
+
+--------------------------------------------------------------------------------+
+* "stopTime.sh"
+Short script that connects to a second running instance in the same region and transfers 7 files
+of different size 5 times and takes the average transertime and saved as "#REGION-VM1toVM2.json".
+
+"stopTime.sh
+#1-dns-name1
+#2-keyname
+#3-region
+#4-instance-type":
+First off a test scp is done in a while loop to make sure the ssh-connection is ready to establish.
+Once the loop is breaken out of the actual file transfer starts in a double nested loop.
+5 times outer loop - amonunt of tries
+7 times inner loop - every single file
+The results are saved in a 2D-Matrix then extracted and the average value for each file-transfer is built.
+These results are further stored in a partial .json file.
+--------------------------------------------------------------------------------+
+

@@ -24,7 +24,7 @@ main()
 	awsAccesKeyID=$(cat credentials.json | jq -r .awsAccesKeyID)
 	awsSecretAccessKey=$(cat credentials.json | jq -r .awsSecretAccessKey)
 
-	script1="
+	script="
 	fallocate -l 10M 0.dat;
 	fallocate -l 200M 1.dat;
 	fallocate -l 300M 2.dat;
@@ -32,6 +32,24 @@ main()
 	fallocate -l 500M 4.dat;
 	fallocate -l 1G 5.dat;
 	fallocate -l 2G 6.dat;
+
+
+	aws configure set aws_access_key_id $awsAccesKeyID;
+	aws configure set aws_secret_access_key $awsSecretAccessKey;
+	chmod 400 $keyName.pem;
+	chmod +x $scriptName;
+	./$scriptName $vm2name $keyName $zone $archtiec;
+	echo VM-1 done;
+	"
+	
+	fastScript="
+	fallocate -l 10M 0.dat;
+	fallocate -l 10M 1.dat;
+	fallocate -l 10M 2.dat;
+	fallocate -l 10M 3.dat;
+	fallocate -l 10M 4.dat;
+	fallocate -l 10M 5.dat;
+	fallocate -l 10M 6.dat;
 
 
 	aws configure set aws_access_key_id $awsAccesKeyID;
@@ -62,7 +80,7 @@ main()
 	#try connecting via ssh until success
 	while true; do
 		#connect via ssh with script-exec instruction once connected
-		ssh -i "$keypath$keyName.pem" -o StrictHostKeyChecking=no ec2-user@$dnsName $script1
+		ssh -i "$keypath$keyName.pem" -o StrictHostKeyChecking=no ec2-user@$dnsName $fastScript
 		if [ "$?" = "255" ];
 		then
 			echo "Connection refused! Trying again..."
@@ -118,9 +136,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then
 fi
 
 main $@
-
-
-
 
 
 

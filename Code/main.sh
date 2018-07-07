@@ -1,8 +1,6 @@
 #!/bin/bash
-#
-main(){
 
-	mkdir -p jsons
+main(){
 
 	architec=$1
 	spotYes=$2
@@ -25,20 +23,20 @@ main(){
 	if [[ $whichZone = "1" ]];
 	then
 		mkdir -p spots/$architec/$zone1/$tempFolderName
-		start_2_cheapest_spots $architec $zone1 $spotYes $tempFolderName
+		start_instance_pair $architec $zone1 $spotYes $tempFolderName
 		remove_temp_files "spots/$architec/$zone1/$tempFolderName" "$zone1" 
 
 	elif [[ $whichZone = "2" ]];
 	then
 		mkdir -p spots/$architec/$zone2/$tempFolderName
-		start_2_cheapest_spots $architec $zone2 $spotYes $tempFolderName
+		start_instance_pair $architec $zone2 $spotYes $tempFolderName
 		remove_temp_files "spots/$architec/$zone2/$tempFolderName" "$zone2"
 
 	else
 		mkdir -p spots/$architec/$zone1/$tempFolderName
 		mkdir -p spots/$architec/$zone2/$tempFolderName
-		start_2_cheapest_spots $architec $zone1 $spotYes $tempFolderName &
-		start_2_cheapest_spots $architec $zone2 $spotYes $tempFolderName
+		start_instance_pair $architec $zone1 $spotYes $tempFolderName &
+		start_instance_pair $architec $zone2 $spotYes $tempFolderName
 		remove_temp_files "spots/$architec/$zone1/$tempFolderName" "$zone1" 
 		remove_temp_files "spots/$architec/$zone2/$tempFolderName" "$zone2"
 
@@ -60,10 +58,10 @@ create_data(){
 	fi
 
 	regionSize=$(jq '.Regions | length' jsons/regions.json)
-	types=$(cat jsons/instance-types.json | jq '.types | length')
+	typesSize=$(cat jsons/instance-types.json | jq '.types | length')
 
-	gen_all_folders $regionSize $types
-	load_prices $regionSize $types
+	gen_all_folders $regionSize $typesSize
+	load_prices $regionSize $typesSize
 	get_min_price
 }
 
@@ -72,7 +70,7 @@ create_data(){
 #2 zone - eg. eu-west-1
 #3 start spot? - eg. yes or no
 #4 temporary folder name that will be deleted after work
-start_2_cheapest_spots(){
+start_instance_pair(){
 	architec=$1
 	zone=$2
 	spotYes=$3
@@ -109,28 +107,17 @@ start_2_cheapest_spots(){
 	dnsName=${dnsName//\"}
 	dnsName2=${dnsName2//\"}
 	mkdir -p "spots/$architec/@results"
-	./startVm2Vm.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec" "$architec"
+	./startVm2Vm1.sh "$dnsName" "$dnsName2" "$(cat spots/$architec/$zone/$tempFolderName/keyName.txt)" "spots/$architec/$zone/$tempFolderName/" "$zone" "spots/$architec" "$architec"
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId
 	aws --region=$zone ec2 terminate-instances --instance-ids $instanceId2
-}
-
-load_all_spot_instance_prices()
-{
-	regionSize=$(jq '.Regions | length' jsons/regions.json)
-	for (( i=0; i<$regionSize; i++ ))
-	do
-		regionName=$(cat jsons/regions.json | jq -r .Regions[$i].RegionName )
-		aws --region=$regionName ec2 describe-spot-price-history > jsons/prices-$regionName.json &
-	done
-
 }
 
 #generate all necessary folders for every instance-type + its regions
 gen_all_folders(){
 	regionSize=$1
 
-	types=$2
-	for (( i=0; i<$types; i++ ))
+	typeSize=$2
+	for (( i=0; i<$typeSize; i++ ))
 	do
 		insName=$(cat jsons/instance-types.json | jq -r .types[$i].type)
 		mkdir -p spots/"$insName"
@@ -147,10 +134,10 @@ gen_all_folders(){
 #Load spot-instance prizes for every type
 load_prices(){
 	regionSize=$1
-	types=$2
+	typeSize=$2
 	rm -f temp.txt
 	echo "[*] Gathering prices in every region for all instance-types..."
-	for (( i=0; i<$types; i++ ))
+	for (( i=0; i<$typeSize; i++ ))
 	do
 		for (( j=0; j<$regionSize; j++ ))
 		do
@@ -368,20 +355,17 @@ remove_temp_files(){
 prepare_key(){
 	path=$1
 	region=$2
-	keyName="$(date +%s%N| sha1sum | tr -cd '[[:alnum:]]')"
-	echo $keyName > $path/keyName.txt
-	key=$(aws --region=$region ec2 create-key-pair --key-name $keyName)
-	if [ $? != 255 ]
-	then
-		echo "[*] Creating new Key in $region..."
-	else
-		echo "[*] Removing temporary Key in $region..."
-		rm -f "$path/$keyName.pem"
-		aws --region=$region ec2 delete-key-pair --key-name $keyName
-		echo [*] Creating new Key...
+	
+	while true; do
+		keyName="$(date +%s%N| sha1sum | tr -cd '[[:alnum:]]')"
+		echo $keyName > $path/keyName.txt
 		key=$(aws --region=$region ec2 create-key-pair --key-name $keyName)
-
-	fi
+		if [ $? != 255 ]
+		then
+			echo "[*] Creating new Key in $region..."
+			break
+		fi
+	done
 
 	echo "$key" > "$path/key.json"
 	cat "$path/key.json" | jq -r .KeyMaterial  > "$path/$keyName.pem"
@@ -519,4 +503,7 @@ phase4
 phase5
 java -jar costPerformance.jar "$(pwd)"
 echo "end: $(date)" >> totalTime
+echo ""
+column -s, -t < cost-performance.csv
+
 
