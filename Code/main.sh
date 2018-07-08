@@ -247,6 +247,13 @@ start_spot_for_region(){
 	echo $instanceId > $path/1.txt
 	instanceId2=$(cat "$path/req-status2.json" | jq -r .SpotInstanceRequests[0].InstanceId)
 	echo $instanceId2 > $path/2.txt
+	
+	if [[ $instanceId = "" ]] || [[ $instanceId2 = "" ]];
+	then 
+		alternative_start_for_unavail_spot $region $path
+		return
+	fi
+	
 	echo "[*] Got spot-instance for $type in $region with id: $instanceId | $instanceId2"
 	while true; do
 		status=$(aws --region=$region ec2 describe-instances --instance-ids $instanceId --query Reservations[0].Instances[0].State.Name)
