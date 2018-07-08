@@ -283,8 +283,14 @@ start_normal_instance(){
 	secGroupID=$(cat "$path/Specification.json" | jq -r .SecurityGroupIds[0]) 
 	itype=$(cat "$path/Specification.json" | jq -r .InstanceType)
 
-	instanceId=$(aws --region=$region ec2 run-instances --image-id $amiID --count 1 --instance-type $itype --key-name $keyName --security-group-ids $secGroupID --query Instances[0].InstanceId)
-	instanceId=${instanceId//\"}
+	while true; do
+		instanceId=$(aws --region=$region ec2 run-instances --image-id $amiID --count 1 --instance-type $itype --key-name $keyName --security-group-ids $secGroupID --query Instances[0].InstanceId)
+		instanceId=${instanceId//\"}
+		if [[ $instanceId = *"i-"* ]];
+			then break;
+		fi
+	done
+	
 	echo "[*] Got instance for $type in $region with id: $instanceId"
 	while true; do
 		status=$(aws --region=$region ec2 describe-instances --instance-ids $instanceId --query Reservations[0].Instances[0].State.Name)
