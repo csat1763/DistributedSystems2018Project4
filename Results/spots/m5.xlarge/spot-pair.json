@@ -1,0 +1,21 @@
+[
+{
+  "Timestamp": "2018-04-26T17:45:31.000Z",
+  "AvailabilityZone": "us-east-2b",
+  "InstanceType": "m5.xlarge",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.032600",
+  "Index": 935,
+  "Zone": "us-east-2"
+}
+,
+{
+  "Timestamp": "2018-05-10T21:16:20.000Z",
+  "AvailabilityZone": "ca-central-1b",
+  "InstanceType": "m5.xlarge",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.050300",
+  "Index": 404,
+  "Zone": "ca-central-1"
+}
+]

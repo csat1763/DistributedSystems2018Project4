@@ -1,0 +1,11 @@
+{
+  "ImageId": "ami-922914f7",
+  "KeyName": "93c078e7a7475f512b7f87fb3e96d384c42db609",
+  "SecurityGroupIds": [
+    "sg-03685be47ff08f2c8"
+  ],
+  "InstanceType": "c5.large",
+  "Placement": {
+    "AvailabilityZone": "us-east-2c"
+  }
+}

@@ -1,0 +1,2664 @@
+{
+    "SpotPriceHistory": [
+        {
+            "Timestamp": "2018-06-21T06:34:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-21T06:34:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-21T06:33:48.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-21T06:33:48.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-20T06:33:46.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-20T06:33:46.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-20T06:33:46.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-20T06:33:46.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-19T21:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-19T21:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-19T21:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-19T21:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-19T11:33:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-19T11:33:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-19T11:33:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-19T11:33:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-18T15:33:45.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-18T15:33:45.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-18T15:33:45.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-18T15:33:45.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-18T09:33:53.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-18T09:33:53.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-18T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-18T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-17T19:33:43.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-17T19:33:43.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-17T19:33:43.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-17T19:33:43.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-17T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-17T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-17T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-17T09:33:42.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-16T11:26:44.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-16T11:26:44.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-16T11:26:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-16T11:26:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-15T11:26:07.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-15T11:26:07.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-15T11:26:00.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-15T11:26:00.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-14T11:25:56.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-14T11:25:56.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-14T11:25:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-14T11:25:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-13T11:25:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-13T11:25:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-13T11:25:13.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-13T11:25:13.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-12T11:24:47.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-12T11:24:47.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-12T11:24:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-12T11:24:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-11T11:24:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-11T11:24:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-11T11:24:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-11T11:24:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-10T11:23:51.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-10T11:23:51.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-10T11:23:51.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-10T11:23:51.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-10T06:24:02.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-10T06:24:02.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-10T06:23:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-10T06:23:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-09T06:23:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-09T06:23:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-09T06:23:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-09T06:23:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-08T14:34:25.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-08T14:34:25.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-08T14:33:07.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-08T14:33:07.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-08T01:23:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-08T01:23:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-08T01:23:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-08T01:23:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-07T14:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-07T14:33:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-07T14:32:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-07T14:32:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-06T14:32:34.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-06T14:32:34.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-06T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-06T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-05T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-05T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-05T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-05T14:31:56.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-04T14:31:25.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-04T14:31:25.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-04T14:31:25.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-04T14:31:25.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-03T18:31:24.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-03T18:31:24.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-03T18:31:24.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-03T18:31:24.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T23:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T23:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T23:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T23:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T13:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T13:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T13:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T13:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T03:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T03:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-02T03:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-02T03:31:38.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-01T17:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-01T17:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-01T17:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-01T17:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-01T07:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-01T07:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-06-01T07:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-06-01T07:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-31T11:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-31T11:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-31T11:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-31T11:31:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-31T05:32:06.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-31T05:32:06.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-31T05:31:39.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-31T05:31:39.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T15:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T15:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T15:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T15:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T05:31:36.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T05:31:36.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T05:31:36.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T05:31:36.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T04:32:47.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T04:32:47.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-30T04:32:01.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-30T04:32:01.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-29T09:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-29T09:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-29T09:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-29T09:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-29T04:32:00.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-29T04:32:00.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-29T04:31:52.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-29T04:31:52.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-28T14:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-28T14:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-28T14:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-28T14:31:35.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-28T04:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-28T04:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-28T04:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-28T04:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-27T14:31:44.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-27T14:31:44.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-27T14:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-27T14:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T14:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T14:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T14:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T14:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T09:31:44.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T09:31:44.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-26T09:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-26T09:31:34.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-25T19:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-25T19:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-25T19:31:18.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-25T19:31:18.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-25T09:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-25T09:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-25T09:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-25T09:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-24T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-24T23:31:33.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-24T23:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-24T23:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-24T13:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-24T13:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-24T13:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-24T13:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-23T21:32:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-23T21:32:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-23T21:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-23T21:31:32.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-23T11:32:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-23T11:32:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-23T11:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-23T11:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-22T21:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-22T21:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-22T21:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-22T21:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-22T11:32:03.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-22T11:32:03.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-22T11:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-22T11:31:31.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-21T16:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-21T16:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-21T16:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-21T16:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-21T11:31:42.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-21T11:31:42.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-21T11:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-21T11:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-20T11:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-20T11:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-20T11:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-20T11:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-20T02:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-20T02:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-20T02:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-20T02:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-19T21:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-19T21:31:30.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-19T21:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-19T21:31:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-18T21:31:27.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-18T21:31:27.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-18T21:31:27.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-18T21:31:27.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-18T01:31:26.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-18T01:31:26.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-18T01:31:26.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-18T01:31:26.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-17T22:31:39.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-17T22:31:39.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-17T22:30:23.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-17T22:30:23.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-16T22:30:44.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-16T22:30:44.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-16T22:30:23.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-16T22:30:23.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T22:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T22:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T22:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-15T22:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-15T12:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T12:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T12:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-15T12:30:21.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-15T02:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T02:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-15T02:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-15T02:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-14T16:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-14T16:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-14T16:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-14T16:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-13T18:31:54.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-13T18:31:54.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-13T18:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-13T18:30:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-13T00:30:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-13T00:30:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-13T00:30:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-13T00:30:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-12T18:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-12T18:31:14.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-12T18:30:18.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-12T18:30:18.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-11T18:30:18.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-11T18:30:18.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-11T18:30:17.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-11T18:30:17.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-11T15:33:51.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-11T15:33:51.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-11T15:33:02.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-11T15:33:02.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-10T15:33:30.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-10T15:33:30.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-10T15:33:02.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-10T15:33:02.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-09T15:32:41.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-09T15:32:41.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-09T15:32:41.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-09T15:32:41.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-08T20:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-08T20:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-08T20:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-08T20:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-08T14:33:18.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-08T14:33:18.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-08T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-08T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-07T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-07T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-07T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-07T14:32:39.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-07T05:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-07T05:32:26.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-07T05:32:25.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-07T05:32:25.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-06T05:33:05.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-06T05:33:05.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-06T05:32:38.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-06T05:32:38.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-05T05:32:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-05T05:32:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-05T05:32:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-05T05:32:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-04T20:42:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-04T20:42:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-04T20:42:28.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-04T20:42:28.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-03T20:42:22.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-03T20:42:22.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-03T20:41:46.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-03T20:41:46.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-02T20:41:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-02T20:41:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-02T20:41:37.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-02T20:41:37.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-02T08:43:29.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-02T08:43:29.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-02T08:42:56.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-02T08:42:56.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-01T08:42:44.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-01T08:42:44.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-05-01T08:42:00.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-05-01T08:42:00.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-30T08:41:52.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-30T08:41:52.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-30T08:41:52.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-30T08:41:52.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-29T22:41:51.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-29T22:41:51.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-29T22:41:51.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-29T22:41:51.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-29T07:42:12.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-29T07:42:12.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-29T07:42:11.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-29T07:42:11.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-28T07:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-28T07:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-28T07:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-28T07:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-27T21:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-27T21:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-27T21:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-27T21:41:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-27T14:32:34.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-27T14:32:34.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-27T14:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-27T14:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-26T14:31:42.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-26T14:31:42.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-26T14:31:05.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-26T14:31:05.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-26T00:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-26T00:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-26T00:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-26T00:31:06.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-25T14:31:04.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-25T14:31:04.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-25T14:31:04.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-25T14:31:04.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-24T23:31:40.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-24T23:31:40.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-24T23:31:20.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-24T23:31:20.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-23T23:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-23T23:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-23T23:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-23T23:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-23T03:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-23T03:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-23T03:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-23T03:31:19.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-22T22:31:50.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-22T22:31:50.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-22T22:31:03.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-22T22:31:03.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-21T22:31:02.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-21T22:31:02.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Linux/UNIX", 
+            "SpotPrice": "0.004300"
+        }, 
+        {
+            "Timestamp": "2018-04-21T22:31:02.000Z", 
+            "AvailabilityZone": "ap-south-1b", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }, 
+        {
+            "Timestamp": "2018-04-21T22:31:02.000Z", 
+            "AvailabilityZone": "ap-south-1a", 
+            "InstanceType": "t2.micro", 
+            "ProductDescription": "Windows", 
+            "SpotPrice": "0.008900"
+        }
+    ]
+}

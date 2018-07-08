@@ -1,0 +1,11 @@
+The project should be submitted to OLAT and the submission should contain at least:
+1. A zip file with the source code
+	-> Done.
+2. Explanation for software architecture (e.g. classes, components, interfaces, which database, where the results are stored, …)
+	-> See folder "Documentation" (Code-Documentation.txt, General.txt) and folder "Results" (Evaluation Measurements.htm).
+3. Problems that you faced with and how have you solved them.
+	-> See folder "Documentation" (Problems.txt)
+4. Detailed explanation how to deploy and run the code (software and hardware requirements)
+	-> See README.md
+5. A script to run the code
+	-> See README.md and folder "Code"

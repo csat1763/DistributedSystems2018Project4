@@ -1,0 +1,11 @@
+{
+  "ImageId": "ami-922914f7",
+  "KeyName": "fdef442ba2cae09f3c3df48b1d40157b6d2e0b6e",
+  "SecurityGroupIds": [
+    "sg-03685be47ff08f2c8"
+  ],
+  "InstanceType": "t2.micro",
+  "Placement": {
+    "AvailabilityZone": "us-east-2c"
+  }
+}

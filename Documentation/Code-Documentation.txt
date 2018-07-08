@@ -119,7 +119,7 @@ and saves the measurement as a file which is then downloaded.
 #7-instance-type":
 Configure AWS-Credentials in order to establish successful SSH-Connection.
 Try to transfer the script "stopTime.sh" to first running instance via SCP.
-When done alsso transfer the key file.
+When done also transfer the key file.
 Connect via SSH to first instance and run prepared script which does following:
 - Allocates 7 files size range from 10MB to 2GB
 - AWS-Credentials config

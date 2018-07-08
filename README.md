@@ -13,6 +13,10 @@
 2. Measure transfer time VM2VM (different instance types)
 3. Determine the cost-performance trade-off
 
+## Software and hardware requirements
+Windows 64 Bit with Cygwin or a Bash (eg. GIT-Bash) or any Unix System.
+Hardware requirements: regular hardware is able to run this software.
+
 ## Code
 The code can be found in the *Code* folder.
 Before running the code enter your credentials in file...

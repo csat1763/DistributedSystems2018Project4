@@ -1,0 +1,9 @@
+{
+  "Timestamp": "2018-06-20T12:36:22.000Z",
+  "AvailabilityZone": "eu-west-3c",
+  "InstanceType": "m5.large",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.031800",
+  "Index": 0,
+  "Zone": "eu-west-3"
+}

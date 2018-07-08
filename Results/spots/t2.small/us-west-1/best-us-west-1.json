@@ -1,0 +1,9 @@
+{
+  "Timestamp": "2018-06-21T06:25:11.000Z",
+  "AvailabilityZone": "us-west-1b",
+  "InstanceType": "t2.small",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.008300",
+  "Index": 2,
+  "Zone": "us-west-1"
+}

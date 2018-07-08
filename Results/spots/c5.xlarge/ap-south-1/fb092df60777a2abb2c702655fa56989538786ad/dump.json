@@ -1,0 +1,11 @@
+{
+  "ImageId": "ami-76d6f519",
+  "KeyName": "750a9c6c8be9f9b326a1559dab1abbd4feb92fd9",
+  "SecurityGroupIds": [
+    "sg-0d99bd12392c98023"
+  ],
+  "InstanceType": "c5.xlarge",
+  "Placement": {
+    "AvailabilityZone": "ap-south-1a"
+  }
+}

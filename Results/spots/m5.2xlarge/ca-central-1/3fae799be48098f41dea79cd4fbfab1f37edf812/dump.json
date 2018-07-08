@@ -1,0 +1,11 @@
+{
+  "ImageId": "ami-338a0a57",
+  "KeyName": "c788e44ecaa90601b1c0ce885786f0341d83060b",
+  "SecurityGroupIds": [
+    "sg-0085a3ea735cd7b88"
+  ],
+  "InstanceType": "m5.2xlarge",
+  "Placement": {
+    "AvailabilityZone": "ca-central-1b"
+  }
+}

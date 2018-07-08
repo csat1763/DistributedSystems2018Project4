@@ -1,0 +1,24 @@
+Workflow
+"start.sh":
+Make other scripts runnable and start main.sh
+
+"main.sh":
+1. Generate folders for every instance-type and its regions
+2. Gather prices for all instance-types in each region and store them in every region folder of each instance-type
+3. "findMin.jar":
+	3.1 Find the best price for all regions of each instance-type
+	3.2 Extract the 2 cheapest spot-instance entries from above and save it in the instance-type folder
+4. Prepare Specification file for spot-request (Sec-group,Key,ImageId,ect...)
+5. Send a request for 2 instances in same region and try to acquire them (get running instance ids)
+6. "startVm2Vm.sh":
+	6.1 Setup aws config
+	6.2 Connect to one instance and transfer key and the meausrement script
+	6.3 Once connected generate files and start measusrement script
+	6.4 "stopTime.sh":
+		6.4.1 Transfer 7 files 5 times and take average time for each transmission of a file
+		6.4.2 Save the result as a file
+	6.5 download the result file and fill it with necessary information
+7. "cost-peformance.jar":
+	7.1 crawl through every instance-type folder and check the results
+	7.2 create one single CSV-File for all results with the 2 zones of each instance-type
+	

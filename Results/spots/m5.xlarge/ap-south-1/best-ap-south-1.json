@@ -1,0 +1,9 @@
+{
+  "Timestamp": "2018-05-02T16:41:37.000Z",
+  "AvailabilityZone": "ap-south-1a",
+  "InstanceType": "m5.xlarge",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.055500",
+  "Index": 601,
+  "Zone": "ap-south-1"
+}

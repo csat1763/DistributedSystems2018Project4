@@ -1,0 +1,54 @@
+{
+	"Files":[
+	
+		{
+		"name":"0.data",
+		"size":"10485760",
+		"transferTime":"7433",
+		"speedInMBpS":"1.410704"
+		},
+		{
+		"name":"1.data",
+		"size":"209715200",
+		"transferTime":"1236",
+		"speedInMBpS":"169.672492"
+		},
+		{
+		"name":"2.data",
+		"size":"314572800",
+		"transferTime":"1799",
+		"speedInMBpS":"174.859811"
+		},
+		{
+		"name":"3.data",
+		"size":"419430400",
+		"transferTime":"2292",
+		"speedInMBpS":"182.997557"
+		},
+		{
+		"name":"4.data",
+		"size":"524288000",
+		"transferTime":"2870",
+		"speedInMBpS":"182.678746"
+		},
+		{
+		"name":"5.data",
+		"size":"1073741824",
+		"transferTime":"5633",
+		"speedInMBpS":"190.616337"
+		},
+		{
+		"name":"6.data",
+		"size":"2147483648",
+		"transferTime":"11609",
+		"speedInMBpS":"184.984378"
+		},
+{}
+],
+
+"instanceType":"c5.xlarge",
+"zone":"ap-south-1",
+"price":"0.043700",
+"time":"ms",
+"fileSize":"byte"
+}

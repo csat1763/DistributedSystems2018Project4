@@ -1,0 +1,9 @@
+{
+  "Timestamp": "2018-06-20T13:31:00.000Z",
+  "AvailabilityZone": "ca-central-1b",
+  "InstanceType": "t2.xlarge",
+  "ProductDescription": "Linux/UNIX",
+  "SpotPrice": "0.061400",
+  "Index": 0,
+  "Zone": "ca-central-1"
+}

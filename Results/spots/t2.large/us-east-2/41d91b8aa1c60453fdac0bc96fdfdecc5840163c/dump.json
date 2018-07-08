@@ -1,0 +1,11 @@
+{
+  "ImageId": "",
+  "KeyName": "7399410ce446b78c8c7f4e808e216bd548b33ce8",
+  "SecurityGroupIds": [
+    "sg-03685be47ff08f2c8"
+  ],
+  "InstanceType": "t2.large",
+  "Placement": {
+    "AvailabilityZone": "us-east-2c"
+  }
+}
