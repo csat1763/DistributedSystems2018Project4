@@ -1,9 +1,0 @@
-{
-  "Timestamp": "2018-05-16T13:33:30.000Z",
-  "AvailabilityZone": "sa-east-1c",
-  "InstanceType": "c5.xlarge",
-  "ProductDescription": "Linux/UNIX",
-  "SpotPrice": "0.061600",
-  "Index": 394,
-  "Zone": "sa-east-1"
-}

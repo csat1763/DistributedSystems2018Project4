@@ -1,0 +1,20 @@
+1. t2 family spot-requests:
+AWS doesn't want to provide spot-instances for lower tier t2 instances hence a workaround is needed.
+We used normal instances for every t2 instance to measure the speed.
+
+2. Limitation on concurrent running instances:
+AWS restricts the amount of cconcurrent running instances hence not every instance-type
+can be tested at the same time.
+Workaround: Find a sequential execution order for the instances.
+
+3. Spot-request very low limit:
+Certain spot-instance-types like c5.2xlarge can only are restricted to 2 concurrently
+running instances hence the measurement needs to be done in the first zone then in the second zone.
+Again we are talking about sequential execution order.
+
+4. AWS wont deliver spot-req:
+AWS sometimes is not able to deliver a requested spot-instance.
+Workaround: Fall back routine to starting normal instances if error occurs.
+
+5. AWS wont start normal instance because of volume problems:
+Workaround: try in endless while loop until it is finally delivered.
