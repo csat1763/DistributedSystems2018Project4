@@ -237,6 +237,10 @@ start_spot_for_region(){
 		then
 			alternative_start_for_unavail_spot $region $path
 			echo FAIL REQSSTATUS $region $path
+			#FAIL REQSSTATUS us-east-2 spots/m5.large/us-east-2/49f9e4898f94f68e5948cc0ff34b5aa23c512ca2
+			#[*] Error for spots/m5.large/us-east-2/49f9e4898f94f68e5948cc0ff34b5aa23c512ca2 in us-east-2 Calling normal instance instead...
+
+
 			return
 		else
 			sleep 2

@@ -23,7 +23,7 @@ import com.google.gson.stream.JsonReader;
  * 			3. Exisiting file in folder: /jsons/instance-types.json
  * 		2. Existing files (2) within folder @results: ZONE1-VM1toVM2.json and ZONE2-VM1toVM2.json
  * Output:
- * 		1. For every instance-type in each region folder: cost-performance.csv
+ * 		1. cost-performance.csv
  *  */
 public class CostPerformance {
 
