@@ -13,9 +13,12 @@
 2. Measure transfer time VM2VM (different instance types)
 3. Determine the cost-performance trade-off
 
+## Submission
+See *Documentation/Submission.txt* to check task fulfillment.
+
 ## Software and hardware requirements
 Windows 64 Bit with Cygwin or a Bash (eg. GIT-Bash) or any Unix System.
-Hardware requirements: regular hardware is able to run this software.
+Regular hardware is able to run this software.
 
 ## Code
 The code can be found in the *Code* folder.
