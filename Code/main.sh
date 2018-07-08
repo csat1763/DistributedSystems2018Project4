@@ -248,7 +248,7 @@ start_spot_for_region(){
 	instanceId2=$(cat "$path/req-status2.json" | jq -r .SpotInstanceRequests[0].InstanceId)
 	echo $instanceId2 > $path/2.txt
 	
-	if [[ $instanceId = "" ]] || [[ $instanceId2 = "" ]];
+	if [[ $instanceId != *"i-"* ]] || [[ $instanceId2 != *"i-"* ]];
 	then 
 		alternative_start_for_unavail_spot $region $path
 		return
