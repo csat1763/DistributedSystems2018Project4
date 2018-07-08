@@ -220,6 +220,7 @@ start_spot_for_region(){
 	if [[ $reqId = "" ]] || [[ $reqId2 = "" ]];
 	then 
 		alternative_start_for_unavail_spot $region $path
+		echo FAIL REQID $region $path
 		return
 	fi
 
@@ -235,6 +236,7 @@ start_spot_for_region(){
 		elif [ $reqStatus != *"pending"* -a $reqStatus2 != *"pending"* ];
 		then
 			alternative_start_for_unavail_spot $region $path
+			echo FAIL REQSSTATUS $region $path
 			return
 		else
 			sleep 2
@@ -251,6 +253,7 @@ start_spot_for_region(){
 	if [[ $instanceId != *"i-"* ]] || [[ $instanceId2 != *"i-"* ]];
 	then 
 		alternative_start_for_unavail_spot $region $path
+		echo FAIL ISNTANCEID $region $path
 		return
 	fi
 	
