@@ -219,8 +219,8 @@ start_spot_for_region(){
 	
 	if [[ $reqId = "" ]] || [[ $reqId2 = "" ]];
 	then 
+		echo "-----------------------FAIL REQSSTATUS $region $path"
 		alternative_start_for_unavail_spot $region $path
-		echo FAIL REQID $region $path
 		return
 	fi
 
@@ -233,14 +233,10 @@ start_spot_for_region(){
 		if [ $reqStatus = "fulfilled" -a $reqStatus2 = "fulfilled" ]; 
 		then
 			break
-		elif [ $reqStatus != *"pending"* -a $reqStatus2 != *"pending"* ];
+		elif [[ $reqStatus != *"pending"* ]] || [[ $reqStatus2 != *"pending"* ]];
 		then
+			echo "-----------------------FAIL REQSSTATUS $region $path"
 			alternative_start_for_unavail_spot $region $path
-			echo FAIL REQSSTATUS $region $path
-			#FAIL REQSSTATUS us-east-2 spots/m5.large/us-east-2/49f9e4898f94f68e5948cc0ff34b5aa23c512ca2
-			#[*] Error for spots/m5.large/us-east-2/49f9e4898f94f68e5948cc0ff34b5aa23c512ca2 in us-east-2 Calling normal instance instead...
-
-
 			return
 		else
 			sleep 2
@@ -256,8 +252,8 @@ start_spot_for_region(){
 	
 	if [[ $instanceId != *"i-"* ]] || [[ $instanceId2 != *"i-"* ]];
 	then 
+		echo "-----------------------FAIL ISNTANCEID $region $path"
 		alternative_start_for_unavail_spot $region $path
-		echo FAIL ISNTANCEID $region $path
 		return
 	fi
 	
