@@ -11,7 +11,7 @@
 ## Task
 
 1. For all given instance-types: Start a pair of spot instances for the 2 cheapest zones (check automatically in each region / availability zone)
-2. Measure transfer time VM2VM within same zone (different instance types)
+2. Measure transfer time VM2VM within same zone for all pairs
 3. Determine the cost-performance trade-off
 
 ## Submission
