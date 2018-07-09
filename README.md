@@ -37,7 +37,8 @@ If you wish to test different instance-types modify the file below accordingly i
 
 	$ instance-types.json
 	
-This requires the phases in main to be adjusted the phases in *main.sh* accordingly.
+This requires the phases in *main.sh* to be adjusted accordingly.
+See *Documentation/Problems.txt* for further explanation.
 
 ## Code
 The code can be found in the *Code* folder.
