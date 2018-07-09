@@ -42,13 +42,13 @@ To execute the code do the following...
 
      $ ./start.sh
 	 
-This will output the file *cost-performance.csv* in the folder *Code*.
+This will output the file *cost-performance.csv* .
 	 
 To stop all spot-requests and terminate all running instances run...
 	 
 	 $ ./terminateAll.sh
 
-The output from running *./start.sh* will be the file below which is then further evaluated.
+The output from running *./start.sh* will be the file below which is in the folder *Code*.
 
 	cost-performance.csv
 
