@@ -41,9 +41,7 @@ Then run following command in your shell...
 To execute the code do the following...
 
      $ ./start.sh
-	 
-This will output the file *cost-performance.csv* .
-	 
+	 	 
 To stop all spot-requests and terminate all running instances run...
 	 
 	 $ ./terminateAll.sh
