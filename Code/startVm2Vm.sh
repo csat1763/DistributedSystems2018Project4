@@ -80,7 +80,7 @@ main()
 	#try connecting via ssh until success
 	while true; do
 		#connect via ssh with script-exec instruction once connected
-		ssh -i "$keypath$keyName.pem" -o StrictHostKeyChecking=no ec2-user@$dnsName $fastScript
+		ssh -i "$keypath$keyName.pem" -o StrictHostKeyChecking=no ec2-user@$dnsName $script
 		if [ "$?" = "255" ];
 		then
 			echo "Connection refused! Trying again..."
