@@ -338,9 +338,6 @@ td
 	border-left:1.0pt solid windowtext;}
 .xl97
 	{mso-style-parent:style0;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	mso-number-format:0;
 	text-align:center;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
@@ -348,47 +345,23 @@ td
 	border-left:.5pt solid windowtext;}
 .xl98
 	{mso-style-parent:style0;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	mso-number-format:0;
-	text-align:center;
-	border:.5pt solid windowtext;}
-.xl99
-	{mso-style-parent:style0;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	mso-number-format:0;
-	text-align:center;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;}
-.xl100
-	{mso-style-parent:style0;
-	text-align:center;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;}
-.xl101
-	{mso-style-parent:style0;
 	text-align:center;
 	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;}
-.xl102
+.xl99
 	{mso-style-parent:style0;
 	text-align:center;
 	border:.5pt solid windowtext;}
-.xl103
+.xl100
 	{mso-style-parent:style0;
 	text-align:center;
 	border-top:.5pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
 	border-left:.5pt solid windowtext;}
-.xl104
+.xl101
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -400,7 +373,7 @@ td
 	border-left:.5pt solid windowtext;
 	background:#70AD47;
 	mso-pattern:black none;}
-.xl105
+.xl102
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -412,7 +385,7 @@ td
 	border-left:.5pt solid windowtext;
 	background:#70AD47;
 	mso-pattern:black none;}
-.xl106
+.xl103
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -423,6 +396,42 @@ td
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;
 	background:#ED7D31;
+	mso-pattern:black none;}
+.xl104
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;}
+.xl105
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;}
+.xl106
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#4472C4;
 	mso-pattern:black none;}
 .xl107
 	{mso-style-parent:style0;
@@ -434,7 +443,7 @@ td
 	border-right:1.0pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;
-	background:#FFC000;
+	background:#4472C4;
 	mso-pattern:black none;}
 .xl108
 	{mso-style-parent:style0;
@@ -446,45 +455,9 @@ td
 	border-right:1.0pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
 	border-left:.5pt solid windowtext;
-	background:#FFC000;
-	mso-pattern:black none;}
-.xl109
-	{mso-style-parent:style0;
-	font-weight:700;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	text-align:center;
-	border-top:1.0pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	background:#4472C4;
-	mso-pattern:black none;}
-.xl110
-	{mso-style-parent:style0;
-	font-weight:700;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	text-align:center;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	background:#4472C4;
-	mso-pattern:black none;}
-.xl111
-	{mso-style-parent:style0;
-	font-weight:700;
-	font-family:"Bahnschrift Light", sans-serif;
-	mso-font-charset:0;
-	text-align:center;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
 	background:#70AD47;
 	mso-pattern:black none;}
-.xl112
+.xl109
 	{mso-style-parent:style0;
 	color:white;
 	font-weight:700;
@@ -493,7 +466,7 @@ td
 	text-align:center;
 	background:#757171;
 	mso-pattern:black none;}
-.xl113
+.xl110
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -501,7 +474,7 @@ td
 	text-align:center;
 	background:#4472C4;
 	mso-pattern:black none;}
-.xl114
+.xl111
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -509,7 +482,7 @@ td
 	text-align:center;
 	background:#70AD47;
 	mso-pattern:black none;}
-.xl115
+.xl112
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -517,7 +490,7 @@ td
 	text-align:center;
 	background:#ED7D31;
 	mso-pattern:black none;}
-.xl116
+.xl113
 	{mso-style-parent:style0;
 	font-weight:700;
 	font-family:"Bahnschrift Light", sans-serif;
@@ -525,3 +498,73 @@ td
 	text-align:center;
 	background:#FFC000;
 	mso-pattern:black none;}
+.xl114
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl115
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl116
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl117
+	{mso-style-parent:style0;
+	color:white;
+	font-weight:700;
+	font-family:"Bahnschrift SemiBold", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border:1.0pt solid windowtext;
+	background:#757171;
+	mso-pattern:black none;}
+.xl118
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl119
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl120
+	{mso-style-parent:style0;
+	font-family:"Bahnschrift Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;}
