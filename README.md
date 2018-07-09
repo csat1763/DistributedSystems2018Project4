@@ -21,7 +21,7 @@ Windows 64 Bit with Cygwin or a Bash (eg. GIT-Bash) or any Unix System.
 Regular hardware is able to run this software.
 
 ## Code
-The code can be found in the *Code* folder.
+The code can be found in the *Code* folder. For detailed documentation see files *Code-Documentation.txt* and *General.txt* in folder *Documentation/*.
 Before running the code enter your credentials in file...
 
 	$ credentials.json
