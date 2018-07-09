@@ -3,7 +3,7 @@ AWS doesn't want to provide spot-instances for lower tier t2 instances hence a w
 We used normal instances for every t2 instance to measure the speed.
 
 2. Limitation on concurrent running instances:
-AWS restricts the amount of cconcurrent running instances hence not every instance-type
+AWS restricts the amount of concurrent running instances hence not every instance-type
 can be tested at the same time.
 Workaround: Find a sequential execution order for the instances.
 

@@ -20,8 +20,15 @@ See *Documentation/Submission.txt* to check task fulfillment.
 Windows 64 Bit with Cygwin or a Bash (eg. GIT-Bash) or any Unix System.
 Regular hardware is able to run this software.
 
+## Documentation
+For detailed documentation see folder *Documentation*.
+* Code: *Code-Documentation.txt*
+* Work-flow: *General.txt*
+* Problems: *Problems.txt*
+* Brief overview as presentation: *Presentation/Measurements-in-AWS-VM2VM.pdf*
+
 ## Code
-The code can be found in the *Code* folder. For detailed **documentation** see files *Code-Documentation.txt* and *General.txt* in folder *Documentation*.
+The code can be found in the *Code* folder.
 Before running the code enter your credentials in file...
 
 	$ credentials.json
@@ -34,6 +41,8 @@ Then run following command in your shell...
 To execute the code do the following...
 
      $ ./start.sh
+	 
+This will output the file *cost-performance.csv* in the folder *Code*.
 	 
 To stop all spot-requests and terminate all running instances run...
 	 

@@ -52,7 +52,7 @@ concurrently running spot-instances the measurement runs had to be split in 5 ph
 |#3-from working directory path to regions.json.
 |For every instance-type in each region: Program picks the cheapest instance 
 |and saves the result as "spots/#INSTANCENAME/#REGION/best-#REGION.json".
-|Futhermore for every instance-type the 2 cheapest regions are picked
+|Furthermore for every instance-type the 2 cheapest regions are picked
 |and saved in the file "spots/#INSTANCENAME/spot-pair.json".
 --------------------------------------------------------------------------------+
 
@@ -60,7 +60,7 @@ concurrently running spot-instances the measurement runs had to be split in 5 ph
 --------------------------------------------------------------------------------+
 * "main.sh" continued
 After the setup the goal is to get an instance-pair running so the script "startVm2Vm.sh" can start
-transfering some files to determine speed. The script needs 2 running instances and the ids as params.
+transferring some files to determine speed. The script needs 2 running instances and the ids as params.
 
 "main() 
 #1-instance-name
@@ -87,7 +87,7 @@ transfering some files to determine speed. The script needs 2 running instances 
 |use it instead. Write security-group into specification-file.
 |---+
 |"prepare_key() #1-path to temp folder #2-region":
-|Create a tempory key with random name and extract the key from the aws response.
+|Create a temporary key with random name and extract the key from the aws response.
 |Write keyname into specification-file.
 |-+
 |"start_normal_instance() #1-region #2-path to temp folder" #3-first or second instance(1/2)(used to read instance-id from file eg. 1.txt):
@@ -96,7 +96,7 @@ transfering some files to determine speed. The script needs 2 running instances 
 |-+
 |"start_normal_instance() #1-region #2-path to temp folder":
 |Request a spot-instance-pair and write the response into a file "spot-req.json".
-|Extract request-ids from the file, if none are existend then switch to normal instances,
+|Extract request-ids from the file, if none are existent then switch to normal instances,
 |because aws was not able to provide spotinstances.
 |Check spot status for given request-id and once the request-status of both is "fulfilled" extract
 |instance-ids and write to 1.txt and 2.txt.
@@ -134,7 +134,7 @@ in "/spots/#INSTANCENAME/@results".
 --------------------------------------------------------------------------------+
 * "stopTime.sh"
 Short script that connects to a second running instance in the same region and transfers 7 files
-of different size 5 times and takes the average transertime and saved as "#REGION-VM1toVM2.json".
+of different size 5 times and takes the average transfertime and saved as "#REGION-VM1toVM2.json".
 
 "stopTime.sh
 #1-dns-name1
@@ -142,8 +142,8 @@ of different size 5 times and takes the average transertime and saved as "#REGIO
 #3-region
 #4-instance-type":
 First off a test scp is done in a while loop to make sure the ssh-connection is ready to establish.
-Once the loop is breaken out of the actual file transfer starts in a double nested loop.
-5 times outer loop - amonunt of tries
+Once the loop is broken out of the actual file transfer starts in a double nested loop.
+5 times outer loop - amount of tries
 7 times inner loop - every single file
 The results are saved in a 2D-Matrix then extracted and the average value for each file-transfer is built.
 These results are further stored in a partial .json file.

@@ -12,13 +12,13 @@ Make other scripts runnable and start main.sh
 5. Send a request for 2 instances in same region and try to acquire them (get running instance ids)
 6. "startVm2Vm.sh":
 	6.1 Setup aws config
-	6.2 Connect to one instance and transfer key and the meausrement script
-	6.3 Once connected generate files and start measusrement script
+	6.2 Connect to one instance and transfer key and the measurement script
+	6.3 Once connected generate files and start measurement script
 	6.4 "stopTime.sh":
 		6.4.1 Transfer 7 files 5 times and take average time for each transmission of a file
 		6.4.2 Save the result as a file
 	6.5 download the result file and fill it with necessary information
-7. "cost-peformance.jar":
+7. "cost-performance.jar":
 	7.1 crawl through every instance-type folder and check the results
 	7.2 create one single CSV-File for all results with the 2 zones of each instance-type
 	
