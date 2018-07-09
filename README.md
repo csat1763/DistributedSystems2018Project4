@@ -39,7 +39,7 @@ To stop all spot-requests and terminate all running instances run...
 	 
 	 $ ./terminateAll.sh
 
-The output from running ./start.sh will be the file below which is then further evaluated.
+The output from running *./start.sh* will be the file below which is then further evaluated.
 
 	cost-performance.csv
 
